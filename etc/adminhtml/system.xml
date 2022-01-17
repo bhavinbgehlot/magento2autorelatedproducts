@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <tab id="bgehlot" translate="label" sortOrder="10">
+            <label>Bhavin</label>
+        </tab>
+        <section id="autorelatedproducts" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Auto Related Products</label>
+            <tab>bgehlot</tab>
+            <resource>Bgehlot_AutoRelatedProducts::autorelatedproducts_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
+                <label>General Configuration</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="related_display" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Display Related Products</label>
+                    <source_model>Bgehlot\AutoRelatedProducts\Model\Config\Source\RelatedProductDisplay</source_model>
+                </field>
+                <field id="slider_enable" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Display In Slider</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="product_count" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Product Count</label>
+                    <comment>Number of product display in Frontend.</comment>
+                </field>
+                <field id="caching" translate="label comment" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+				  <label>Related Products Cache Lifetime</label>
+				  <comment>Enter the value of cache lifetime.</comment>
+				</field>
+            </group>
+            <group id="conditions" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
+                <label>Related Product Filter Conditions</label>
+                <field id="category" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Category Filter</label>
+                    <source_model>Bgehlot\AutoRelatedProducts\Model\Config\Source\Category</source_model>
+                </field>
+                <field id="price" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Price Filter</label>
+                    <source_model>Bgehlot\AutoRelatedProducts\Model\Config\Source\Price</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

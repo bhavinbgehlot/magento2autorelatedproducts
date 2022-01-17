@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <autorelatedproducts>
+            <general>
+            	<enabled>0</enabled>
+                <related_display>replace</related_display>
+                <slider_enable>0</slider_enable>
+                <product_count>10</product_count>
+                <caching>3600</caching>
+            </general>
+            <conditions>
+            	<category>same</category>
+                <price>same</price>
+            </conditions>
+        </autorelatedproducts>
+    </default>
+</config>
