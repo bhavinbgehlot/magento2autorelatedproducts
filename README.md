@@ -2,9 +2,15 @@
 Auto Related Products is an amazing and very useful extension for customers to show related products on the product detail page.
 
 
+  <img src="front.png" />
+
 <div id="long_description"><p>Auto Related Products is an amazing and very useful extension for customers to show related products on the detail page of the product. By using Auto Related Product, your customer has a better&nbsp;way to display related products.&nbsp; Now, your customers don't have to choose related products manually. The Auto Related Products extension helps e-commerce merchants increase their sales by representing the additional products as per configuration. The customer just needs to configure one time and the module works automatically. And, the extension gives a way to control how many product products you want to display.&nbsp;</p>
 <p>The Auto Related Product extension saves time by showing related products automatically to your store visitors. The extension has easy to customize prepared rules in the admin section. The module display product automatically at Related product section on the product detail page. We choose to replace Option in the configuration it will replace manually added related products. And, Auto Related Products allows you to display products in a slider.</p>
 <p>&nbsp;</p>
+
+
+  <img src="configuration.png" />
+  
 <h2><strong>Key Features:</strong></h2>
 <ul>
 <li>Easy to install and configure.</li>
